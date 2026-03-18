@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-black: #000000;
+    --secondary-black: #0a0a0a;
+    --accent-black: #141414;
+    --primary-gray: #1a1a1a;
+    --secondary-gray: #262626;
+    --accent-gray: #333333;
+    --accent-orange: #f97316;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative px-4 py-2 transition-colors duration-300 hover:text-accent-orange;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-1/2 w-0 h-0.5 bg-accent-orange transition-all duration-300 -translate-x-1/2;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .cta-button {
+    @apply bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3 rounded-lg font-semibold text-white 
+           transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20 
+           active:scale-95;
+  }
+
+  .feature-card {
+    @apply bg-accent-black border border-primary-gray rounded-xl p-6
+           transition-all duration-300 hover:-translate-y-1 hover:border-accent-orange
+           hover:shadow-lg hover:shadow-orange-500/10;
+  }
+} 
