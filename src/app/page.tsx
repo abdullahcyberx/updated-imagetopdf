@@ -1,3 +1,16 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Image to PDF Converter Online – Free JPG & PNG',
+  description: 'Convert JPG, PNG, or any image to PDF online for free. Fast, secure, no installation required. Image to PDF without watermark, no signup needed.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Image to PDF Converter Online – Free JPG & PNG',
+    description: 'Convert JPG, PNG, or any image to PDF for free. No signup, no watermark, works on Windows, Mac, and mobile.',
+    url: 'https://imagetopdf.shehzada.tech',
+  },
+}
+
 'use client'
 
 import { useState, useCallback } from 'react'
@@ -126,12 +139,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-display mb-6">
-              Convert Images to PDF
-              <span className="text-orange-500"> Instantly</span>
+              Image to PDF Converter
+              <span className="text-orange-500"> Online – Free</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-12">
-              Drop your images below and we'll convert them into a professional PDF document in seconds.
-              Supports PNG, JPG, and JPEG formats.
+            <h2 className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-4">
+              Convert JPG, PNG, and other images to PDF in seconds
+            </h2>
+            <p className="text-base text-gray-500 max-w-2xl mx-auto mb-12">
+              Free online image to PDF converter — no signup, no watermark, no installation required.
+              Supports JPG, PNG, GIF, BMP, and WEBP. Works on Windows, Mac, Android, and iOS.
             </p>
           </div>
 
