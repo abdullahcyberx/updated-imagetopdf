@@ -1,16 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Image to PDF Converter Online – Free JPG & PNG',
-  description: 'Convert JPG, PNG, or any image to PDF online for free. Fast, secure, no installation required. Image to PDF without watermark, no signup needed.',
-  alternates: { canonical: '/' },
-  openGraph: {
-    title: 'Image to PDF Converter Online – Free JPG & PNG',
-    description: 'Convert JPG, PNG, or any image to PDF for free. No signup, no watermark, works on Windows, Mac, and mobile.',
-    url: 'https://imagetopdf.shehzada.tech',
-  },
-}
-
 'use client'
 
 import { useState, useCallback } from 'react'
